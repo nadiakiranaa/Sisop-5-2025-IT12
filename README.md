@@ -1,11 +1,12 @@
-# Sisop-5-2025-IT-Template
+# Sisop-5-2025-IT12
 
 ## Kelompok
 
 Nama | NRP
 --- | ---
-Amoes Noland | 5027231028
-Rafi' Afnaan Fathurrahman | 5027231040
+Nadia Kirana Afifah Prahandita | 5027241005
+Hansen Chang | 5027241028
+Muhammad Khosyi Syehab | 5027241089
 
 ## Daftar Isi
 
