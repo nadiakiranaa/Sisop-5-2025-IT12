@@ -1,112 +1,78 @@
 #include "std_lib.h"
 
 int div(int a, int b) {
-  bool neg = false;
-  if (a < 0) {
-    a = -a;
-    neg = !neg;
-  }
-  if (b < 0) {
-    b = -b;
-    neg = !neg;
-  }
-
+  int neg = 0;
   int res = 0;
+  if (a < 0) { a = -a; neg = !neg; }
+  if (b < 0) { b = -b; neg = !neg; }
   while (a >= b) {
     a -= b;
     res++;
   }
-
   return neg ? -res : res;
 }
 
 int mod(int a, int b) {
-  bool neg = false;
-  if (a < 0) {
-    a = -a;
-    neg = true;
-  }
+  int neg = 0;
+  if (a < 0) { a = -a; neg = 1; }
   if (b < 0) b = -b;
-
-  while (a >= b) {
-    a -= b;
-  }
-
+  while (a >= b) a -= b;
   return neg ? -a : a;
 }
 
 bool strcmp(char *str1, char *str2) {
-  int i = 0;
-  while (str1[i] != '\0' && str2[i] != '\0') {
-    if (str1[i] != str2[i]) return false;
-    i++;
+  while (*str1 && *str2) {
+    if (*str1 != *str2) return false;
+    str1++; str2++;
   }
-  return str1[i] == str2[i];
+  return *str1 == *str2;
 }
 
 void strcpy(char *dst, char *src) {
-  int i = 0;
-  while (src[i] != '\0') {
-    dst[i] = src[i];
-    i++;
+  while (*src) {
+    *dst = *src;
+    dst++;
+    src++;
   }
-  dst[i] = '\0';
+  *dst = '\0';
 }
 
 void clear(byte *buf, unsigned int size) {
-  int i;
-  for (int i = 0; i < size; i++) {
-    buf[i] = 0;
+  unsigned int i;
+  for (i = 0; i < size; i++) {
+    buf[i] = 0x00;
   }
 }
 
 void atoi(char *str, int *num) {
-  int i = 0;
-  int res = 0;
-  bool neg = false;
-
-  if (str[i] == '-') {
-    neg = true;
-    i++;
+  *num = 0;
+  int sign = 1;
+  if (*str == '-') {
+    sign = -1;
+    str++;
   }
-
-  while (str[i] >= '0' && str[i] <= '9') {
-    res = res * 10 + (str[i] - '0');
-    i++;
+  while (*str >= '0' && *str <= '9') {
+    *num = (*num * 10) + (*str - '0');
+    str++;
   }
-
-  *num = neg ? -res : res;
+  *num *= sign;
 }
 
 void itoa(int num, char *str) {
-  int i = 0;
-  bool neg = false;
-  char temp[16];
-
-  if (num == 0) {
-    str[0] = '0';
-    str[1] = '\0';
-    return;
-  }
-
+  char tmp[16];
+  int i = 0, j = 0;
+  int sign = 0;
   if (num < 0) {
-    neg = true;
+    sign = 1;
     num = -num;
   }
-
-  while (num > 0) {
-    temp[i++] = (num % 10) + '0';
+  do {
+    tmp[i++] = (num % 10) + '0';
     num = num / 10;
-  }
-
-  if (neg) {
-    temp[i++] = '-';
-  }
-
-  // Reverse
-  int j = 0;
+  } while (num > 0);
+  if (sign) tmp[i++] = '-';
   while (i > 0) {
-    str[j++] = temp[--i];
+    str[j++] = tmp[--i];
   }
   str[j] = '\0';
 }
