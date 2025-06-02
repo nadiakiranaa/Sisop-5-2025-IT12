@@ -54,6 +54,7 @@ void strcpy(char *dst, char *src) {
 }
 
 void clear(byte *buf, unsigned int size) {
+  int i;
   for (int i = 0; i < size; i++) {
     buf[i] = 0;
   }
