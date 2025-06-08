@@ -216,21 +216,21 @@ grandcompany immortalflames → teks biru, prompt menjadi user@Flame
 
 clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company sedih kamu netral)
 
-grandcompany maelstrom → teks merah, prompt menjadi user@Storm
+## grandcompany maelstrom → teks merah, prompt menjadi user@Storm
 
 ![WhatsApp Image 2025-06-08 at 17 03 11_ba31e7f2](https://github.com/user-attachments/assets/7063f45e-5c23-457f-a20a-188cf064f2dc)
 
-grandcompany twinadder → teks kuning, prompt menjadi user@Serpent
+## grandcompany twinadder → teks kuning, prompt menjadi user@Serpent
 
 ![WhatsApp Image 2025-06-08 at 17 03 23_adc2859c](https://github.com/user-attachments/assets/280967aa-037b-48bd-b137-095441ccf039)
 
 
-grandcompany immortalflames → teks biru, prompt menjadi user@Flame
+## grandcompany immortalflames → teks biru, prompt menjadi user@Flame
 
 ![WhatsApp Image 2025-06-08 at 17 03 23_31796527](https://github.com/user-attachments/assets/7ad5b067-d5bd-4fd6-bf15-c7cb49bc7965)
 
 
-clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company sedih kamu netral)
+## clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company sedih kamu netral)
 
 ![WhatsApp Image 2025-06-08 at 17 03 23_f5792cf6](https://github.com/user-attachments/assets/ab305509-5b2f-4a45-98b3-dc526f7bc6eb)
 
