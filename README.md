@@ -20,7 +20,7 @@ Muhammad Khosyi Syehab | 5027241089
   - [Video Demonstrasi](#video-demonstrasi)
 - [Laporan](#laporan)
 
-## Soal
+## SOAL 1 
 
 Pada suatu hari, anda merasa sangat lelah dari segala macam praktikum yang sudah ada, sehingga anda berencana untuk tidur yang nyenyak di sebuah jam 3:34AM yang cerah. Tetapi, anda terbangun di dalam dunia berbeda yang bernama "Eorzea". Ada sesuatu yang mengganggu pikiran anda sehingga anda diharuskan membuat sebuah operating system bernama "EorzeOS" untuk mendampingi diri anda dalam dunia ini.
 
@@ -185,7 +185,8 @@ Fitur ini dikenal sebagai The Echo, yaitu shell akan "mengulang" kata-kata pengg
 
 ![WhatsApp Image 2025-06-08 at 17 03 12_11266832](https://github.com/user-attachments/assets/4627dc1a-083d-4644-9667-31c2f4bbbb48)
 
-2. Soal ini mengharuskan shell untuk merespons dua perintah istimewa: yo dan gurt.
+## SOAL 2 
+Soal ini mengharuskan shell untuk merespons dua perintah istimewa: yo dan gurt.
 Masing-masing perintah akan membalas dengan pasangan sebaliknya:
 
 yo → output: gurt
@@ -194,7 +195,8 @@ gurt → output: yo
 
 ![WhatsApp Image 2025-06-08 at 17 03 12_a0937267](https://github.com/user-attachments/assets/b4cad505-08ba-4c76-b2b7-13b6c3bb0977)
 
-3. Shell perlu memiliki fitur untuk mengganti nama pengguna (username) yang ditampilkan di prompt.
+## SOAL 3
+Shell perlu memiliki fitur untuk mengganti nama pengguna (username) yang ditampilkan di prompt.
 Perintah yang digunakan adalah:
 
 user <nama> untuk mengganti nama.
@@ -203,7 +205,8 @@ user saja untuk mengembalikannya ke user.
 
 ![WhatsApp Image 2025-06-08 at 17 03 12_88ce9adc](https://github.com/user-attachments/assets/7fe0ea44-a3e9-488c-867f-6a3515b31b12)
 
-4. Soal ini memperkenalkan command grandcompany yang akan mengatur warna tampilan terminal serta identitas pengguna berdasarkan faksi:
+## SOAL 4
+ Soal ini memperkenalkan command grandcompany yang akan mengatur warna tampilan terminal serta identitas pengguna berdasarkan faksi:
 
 grandcompany maelstrom → teks merah, prompt menjadi user@Storm
 
@@ -231,7 +234,8 @@ clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company 
 
 ![WhatsApp Image 2025-06-08 at 17 03 23_f5792cf6](https://github.com/user-attachments/assets/ab305509-5b2f-4a45-98b3-dc526f7bc6eb)
 
-5. Shell kini ditambahkan kemampuan kalkulasi dengan perintah aritmatika:
+## SOAL 5 
+Shell kini ditambahkan kemampuan kalkulasi dengan perintah aritmatika:
 
 add x y → hasil dari x + y
 
@@ -243,7 +247,8 @@ div x y → hasil dari x / y (dengan pengecekan nol)
 
 ![WhatsApp Image 2025-06-08 at 17 03 24_70a59df1](https://github.com/user-attachments/assets/c3655abe-2f06-4e10-80d7-3adc484ef260)
 
-6. Perintah yogurt akan menampilkan satu dari beberapa balasan acak, seperti:
+## SOAL 6
+ Perintah yogurt akan menampilkan satu dari beberapa balasan acak, seperti:
 
 "yo"
 
