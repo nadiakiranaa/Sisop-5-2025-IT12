@@ -179,5 +179,80 @@ https://github.com/user-attachments/assets/1cfa66b1-b2f5-4e3e-a4b2-ec8b012f6fbb
 
 
 ## Laporan
+1. Pada soal pertama, shell diminta untuk mencetak ulang perintah pengguna jika perintah tersebut tidak dikenali sebagai command yang valid.
+Fitur ini dikenal sebagai The Echo, yaitu shell akan "mengulang" kata-kata pengguna layaknya gema.
 
-> Isi sesuai pengerjaan.
+![WhatsApp Image 2025-06-08 at 17 03 12_11266832](https://github.com/user-attachments/assets/4627dc1a-083d-4644-9667-31c2f4bbbb48)
+
+2. Soal ini mengharuskan shell untuk merespons dua perintah istimewa: yo dan gurt.
+Masing-masing perintah akan membalas dengan pasangan sebaliknya:
+
+yo → output: gurt
+
+gurt → output: yo
+
+![WhatsApp Image 2025-06-08 at 17 03 12_a0937267](https://github.com/user-attachments/assets/b4cad505-08ba-4c76-b2b7-13b6c3bb0977)
+
+3. Shell perlu memiliki fitur untuk mengganti nama pengguna (username) yang ditampilkan di prompt.
+Perintah yang digunakan adalah:
+
+user <nama> untuk mengganti nama.
+
+user saja untuk mengembalikannya ke user.
+
+![WhatsApp Image 2025-06-08 at 17 03 12_88ce9adc](https://github.com/user-attachments/assets/7fe0ea44-a3e9-488c-867f-6a3515b31b12)
+
+4. Soal ini memperkenalkan command grandcompany yang akan mengatur warna tampilan terminal serta identitas pengguna berdasarkan faksi:
+
+grandcompany maelstrom → teks merah, prompt menjadi user@Storm
+
+grandcompany twinadder → teks kuning, prompt menjadi user@Serpent
+
+grandcompany immortalflames → teks biru, prompt menjadi user@Flame
+
+clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company sedih kamu netral)
+
+grandcompany maelstrom → teks merah, prompt menjadi user@Storm
+
+![WhatsApp Image 2025-06-08 at 17 03 11_ba31e7f2](https://github.com/user-attachments/assets/7063f45e-5c23-457f-a20a-188cf064f2dc)
+
+grandcompany twinadder → teks kuning, prompt menjadi user@Serpent
+
+![WhatsApp Image 2025-06-08 at 17 03 23_adc2859c](https://github.com/user-attachments/assets/280967aa-037b-48bd-b137-095441ccf039)
+
+
+grandcompany immortalflames → teks biru, prompt menjadi user@Flame
+
+![WhatsApp Image 2025-06-08 at 17 03 23_31796527](https://github.com/user-attachments/assets/7ad5b067-d5bd-4fd6-bf15-c7cb49bc7965)
+
+
+clear → kembalikan warna default dan hapus afiliasi faksi (para Grand Company sedih kamu netral)
+
+![WhatsApp Image 2025-06-08 at 17 03 23_f5792cf6](https://github.com/user-attachments/assets/ab305509-5b2f-4a45-98b3-dc526f7bc6eb)
+
+5. Shell kini ditambahkan kemampuan kalkulasi dengan perintah aritmatika:
+
+add x y → hasil dari x + y
+
+sub x y → hasil dari x - y
+
+mul x y → hasil dari x * y
+
+div x y → hasil dari x / y (dengan pengecekan nol)
+
+![WhatsApp Image 2025-06-08 at 17 03 24_70a59df1](https://github.com/user-attachments/assets/c3655abe-2f06-4e10-80d7-3adc484ef260)
+
+6. Perintah yogurt akan menampilkan satu dari beberapa balasan acak, seperti:
+
+"yo"
+
+"ts unami gng </3"
+
+"sygau"
+
+![WhatsApp Image 2025-06-08 at 17 03 24_5a5e3483](https://github.com/user-attachments/assets/d101aeaa-43c2-4100-be6e-2803295800e6)
+
+
+
+
+
