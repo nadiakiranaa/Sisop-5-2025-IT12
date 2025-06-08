@@ -259,6 +259,7 @@ div x y → hasil dari x / y (dengan pengecekan nol)
 ![WhatsApp Image 2025-06-08 at 17 03 24_5a5e3483](https://github.com/user-attachments/assets/d101aeaa-43c2-4100-be6e-2803295800e6)
 
 ## SOAL 7 
+## MAKEFILE 
 ```
 AS=nasm
 CC=gcc
@@ -299,38 +300,61 @@ prepare:
 	mkdir -p $(BIN)
 	dd if=/dev/zero of=$(BIN)/floppy.img bs=512 count=2880
 ```
+ - Membuat direktori bin/ jika belum ada
+ - Membuat image floppy kosong sebesar 1.44 MB (2880 sektor × 512 byte)
+
 ## bootloader
 ```
 bootloader:
 	$(AS) $(SRC)/bootloader.asm -f bin -o $(BIN)/bootloader.bin
 ```
+- Meng-assemble bootloader.asm menjadi binary mentah (raw .bin)
+- Ini adalah sektor pertama pada floppy (512 byte) yang dijalankan saat boot
+
+
 ## stdlib
 ```
 stdlib:
 	$(CC) $(CFLAGS) -c $(SRC)/std_lib.c -o $(BIN)/std_lib.o
 ```
+- Mengkompilasi file std_lib.c menjadi file objek .o
+- Biasanya berisi fungsi-fungsi utilitas seperti strlen, print, memcpy, dll.
+
 ## shell
 ```
 shell:
 	$(CC) $(CFLAGS) -c $(SRC)/shell.c -o $(BIN)/shell.o
 ```
+- Mengkompilasi kode shell (interface CLI) menjadi object file
+
 ## kernel
 ```
 kernel:
 	$(CC) $(CFLAGS) -c $(SRC)/kernel.c -o $(BIN)/kernel.o
 	nasm $(SRC)/kernel.asm -f elf -o $(BIN)/kernel_asm.o
 ```
+- Mengkompilasi bagian kernel utama (kernel.c)
+- Assemble bagian kernel dalam Assembly (kernel.asm) menjadi file object .o 
+  berformat ELF
+
 ## link
 ```
 link:
 	$(LD) $(LDFLAGS) -o $(BIN)/kernel.bin $(BIN)/kernel.o $(BIN)/kernel_asm.o $(BIN)/std_lib.o $(BIN)/shell.o
 	cat $(BIN)/bootloader.bin $(BIN)/kernel.bin > $(BIN)/floppy.img
 ```
+- Menggabungkan semua file object menjadi satu file kernel binary
+- Menggabungkan bootloader.bin (512 byte pertama) dengan kernel.bin ke dalam satu 
+  file floppy.img
 
 ## build
 ```
 build: prepare bootloader stdlib shell kernel link
 ```
+- Ini adalah target utama.
+- Menjalankan semua step build secara berurutan, dari persiapan sampai menjadi 
+  file image siap dijalankan pada emulator seperti Bochs atau QEMU
+
 
 
 
