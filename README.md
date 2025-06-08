@@ -179,7 +179,8 @@ https://github.com/user-attachments/assets/1cfa66b1-b2f5-4e3e-a4b2-ec8b012f6fbb
 
 
 ## Laporan
-1. Pada soal pertama, shell diminta untuk mencetak ulang perintah pengguna jika perintah tersebut tidak dikenali sebagai command yang valid.
+## SOAL 1 
+ Pada soal pertama, shell diminta untuk mencetak ulang perintah pengguna jika perintah tersebut tidak dikenali sebagai command yang valid.
 Fitur ini dikenal sebagai The Echo, yaitu shell akan "mengulang" kata-kata pengguna layaknya gema.
 
 ![WhatsApp Image 2025-06-08 at 17 03 12_11266832](https://github.com/user-attachments/assets/4627dc1a-083d-4644-9667-31c2f4bbbb48)
