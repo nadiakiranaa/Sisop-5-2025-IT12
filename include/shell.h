@@ -4,7 +4,7 @@
 #include "std_type.h"
 
 void shell();
-void Yogurt();
+void handleYogurt();
 void parseCommand(char *buf, char *cmd, char arg[2][64]);
 
 #endif // __SHELL_H__
